@@ -140,7 +140,7 @@ public class ZombieController : MonoBehaviour {
 			newPosition.x = Mathf.Clamp( newPosition.x, xMin, xMax );
 			moveDirection.x = -moveDirection.x;
 		}
-		// TODO vertical bounds
+
 		float yMax = mainCamera.orthographicSize;
 		
 		if (newPosition.y < -yMax || newPosition.y > yMax) {
